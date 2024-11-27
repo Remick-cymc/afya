@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleLabTest">
+
+    <!-- CardView to hold the test details -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- RelativeLayout inside CardView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <!-- CircleImageView for the test image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/singlelabtest"
+                android:src="@drawable/labtest"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp" />
+
+            <!-- Text container (Vertical LinearLayout) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/singlelabtest"
+                android:layout_centerVertical="true">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/testname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Glucose Test"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#212121" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/testdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This test measures the concentration of glucose (sugar) in the blood to diagnose or monitor diabetes. Typically done after fasting or randomly throughout the day."
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="8dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/testcost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10% OFF 1500KES"
+                    android:textStyle="bold"
+                    android:textColor="#D11717"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ADD TO CART Button at the bottom -->
+    <Button
+        android:id="@+id/addtocartbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ADD TO CART"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

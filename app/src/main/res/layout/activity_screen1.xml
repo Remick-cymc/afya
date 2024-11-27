@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="skip"
+            android:textSize="20sp"
+            android:textColor="#2112F6"
+            android:textAlignment="textEnd"
+            android:id="@+id/skip"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Your lab tests"
+        android:textSize="30sp"
+        android:textColor="#1460DF"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To attract users who want lab tests, the landing screen should focus on user-centric design, clear messaging, and ease of navigation. Here are some strategies to make it appealing"
+        android:layout_margin="15sp"
+        android:lineHeight="20dp"
+        android:textColor="#3E3A39"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:src="@drawable/img" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/fab"
+            android:backgroundTint="#102DE8"
+            android:layout_gravity="bottom|end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:elevation="6dp"
+            android:textColor="#ECE9E9"
+            android:textSize="20sp"
+            app:layout_anchor="@id/fab"
+            app:layout_anchorGravity="center"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

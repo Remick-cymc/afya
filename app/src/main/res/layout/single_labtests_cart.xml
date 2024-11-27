@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="6dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/labtestimg"
+            android:src="@drawable/img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/labtestimg">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Blood COunt (CBC)"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/testname"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This test provides important information abpout the type and numbers of cell in your body"
+                android:textSize="15dp"
+                android:id="@+id/description"
+                android:textColor="#1E1C1B"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1200KES"
+                android:textColor="#A40A0A"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/cost"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="REMOVE"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="6dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/labtestimg"
+        android:src="@drawable/lab1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/labtestimg">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Labtest name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/test_name"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This lab is used to test some information about the types and number of cells in your body"
+            android:textSize="15sp"
+            android:id="@+id/test_description"
+            android:textColor="#8B6E6E"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="1200KES"
+            android:textColor="#EC0A0A"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/test_cost"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
